@@ -55,7 +55,7 @@ class ClapRanker(Ranker):
                     sample,
                     480000,
                     data_truncating=(
-                        "fusion" if self.model.model.enable_fusion else "rand_trunc"
+                        "fusion" if self.model.enable_fusion else "rand_trunc"
                     ),
                     data_filling="repeatpad",
                     audio_cfg=self.model.model_cfg["audio_cfg"],
